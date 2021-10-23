@@ -12,6 +12,9 @@ body {
   color: #111;
   font-family: "Roboto Mono", monospace; }
 
+a {
+  text-decoration: none; }
+
 .header__container {
   background-color: #122c4e;
   width: 100%; }
@@ -65,7 +68,6 @@ body {
       -ms-flex-align: center;
           align-items: center; }
   .header__nav--item {
-    text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     -webkit-transition: color 0.3s linear;
@@ -118,3 +120,44 @@ body {
     .footer__link img {
       height: 30px;
       width: 30px; }
+
+.hero {
+  height: 400px;
+  background-image: url(/img/pizza.hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .hero__card {
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #eee;
+    padding: 25px 10px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px; }
+    .hero__card--btn {
+      padding: 10px 20px;
+      border: none;
+      background-color: #245b8f;
+      font-size: 20px;
+      font-weight: bold;
+      color: #eee;
+      border-radius: 7.5px; }
