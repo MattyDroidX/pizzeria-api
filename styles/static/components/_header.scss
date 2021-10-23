@@ -1,6 +1,6 @@
 .header {
   &__container {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     // display: flex;
     // justify-content: center;
     width: 100%;
@@ -10,11 +10,23 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 20px 20px;
   }
   &__logo {
+    font-size: 32px;
+    color: $white;
+    font-weight: 300;
   }
   &__search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
     &--input {
+      border-radius: 15px;
+      border: 2px none;
+      text-align: center;
+      padding: 4px 5px;
     }
     &--btn {
       border: none;
@@ -31,7 +43,19 @@
   }
 
   &__nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
     &--item {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      transition: color 0.3s linear;
+      font-weight: 300;
+
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 }
