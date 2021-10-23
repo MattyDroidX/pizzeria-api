@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  min-height: 100vh; }
+
+.header__container {
+  background-color: #245b8f;
+  width: 100%; }
+
+.header {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto; }
+
+.header__search--btn {
+  border: none;
+  background: none;
+  cursor: pointer; }
+  .header__search--btn:active {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  .header__search--btn img {
+    width: 25px;
+    height: 25px; }
